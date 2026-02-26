@@ -1,4 +1,4 @@
-📌 Problem Statement
+Problem Statement
 Across Southern Africa, small and medium-sized enterprises (SMEs) are vital to employment
 and economic growth, yet many remain financially fragile and excluded from formal financial systems.
 This project builds a machine learning model to predict the Financial Health Index (FHI)
