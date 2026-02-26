@@ -13,10 +13,9 @@ Data spans 4 Southern African countries: Eswatini, Lesotho, Zimbabwe, and Malawi
 
 Project Structure
 SME-Financial-Health-Prediction/
-│
-├── solution_v4.py       # Full ML pipeline (LightGBM + SMOTE + Ensemble)
-├── submission_v4.csv    # Latest submission file
-└── README.md            # This file
+solution_v4.py       # Full ML pipeline (LightGBM + SMOTE + Ensemble)
+submission_v4.csv    # Latest submission file
+README.md            # This file
 
 Approach
 1. Feature Engineering — 75 Features Created
@@ -45,8 +44,10 @@ How to Run
 Install Dependencies
 bashpip install lightgbm xgboost catboost imbalanced-learn scikit-learn pandas numpy
 Update File Paths
-Open solution.py and update these lines with your own paths:
-pythontrain = pd.read_csv(r"C:\Your\Path\Train.csv")
+Open solution_v4.py and update these lines with your own paths:
+
+train = pd.read_csv(r"C:\Your\Path\Train.csv")
+
 test  = pd.read_csv(r"C:\Your\Path\Test.csv")
 Run
 bashpython solution_v4.py
