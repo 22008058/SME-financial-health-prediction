@@ -93,7 +93,9 @@ Provided by: FinMark Trust
 Dataset not included per competition rules. Download from the Zindi challenge page.
 
 Tech Stack
+
 Python 3.8+ -Language
+
 LightGBM - Primary gradient boosting model
 
 XGBoost - Secondary gradient boosting model
