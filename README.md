@@ -68,26 +68,41 @@ Mean MACRO F1: 0.8038
 submission_v4.csv saved!
 
 Key Learnings
+
 Metric matters — optimizing weighted F1 hides minority class weakness; macro F1 forces the model to perform well on the rare High class
+
 SMOTE needs clean data — impute ALL NaNs (including from OrdinalEncoder) before applying SMOTE or it crashes
+
 Threshold tuning gave a significant boost without changing the model at all
+
 Country stratification in CV gave more reliable estimates across different economic contexts
+
 5-model ensemble (LGB + XGB + CatBoost + RF + ET) is more robust than any single model
 
 
 Dataset
+
 Source: Zindi — data.org Financial Health Prediction Challenge
+
 License: CC-BY SA 4.0
+
 Countries: Eswatini, Lesotho, Zimbabwe, Malawi
+
 Provided by: FinMark Trust
+
 Dataset not included per competition rules. Download from the Zindi challenge page.
 
 Tech Stack
 Python 3.8+ -Language
 LightGBM - Primary gradient boosting model
+
 XGBoost - Secondary gradient boosting model
+
+
 CatBoost - Tertiary gradient boosting model
+
 scikit-learn - RF, ET, preprocessing, CV
+
 imbalanced-learn - SMOTE oversampling
 Pandas + NumPy - Data manipulation
 
