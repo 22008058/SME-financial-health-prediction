@@ -32,6 +32,7 @@ README.md                    # This file
 🌍 Country-Level Insight (from explore.py)
 
 Real data extracted directly from Train.csv using explore.py:
+
 Country      High %    Low %    Medium %    Priority  
 
 🇸🇿 Eswatini  11.5%    51.4%    37.1%      ✅ Regional success model
@@ -51,19 +52,25 @@ Malawi's 81.2% Low rate signals the most urgent need for financial inclusion int
 Financial Institutions:
 
 Can identify 94% of financially vulnerable SMEs (Low class recall = 0.93)
+
 Banks can use predictions for targeted lending and financial inclusion programs
+
 Reduces manual SME assessment cost for microfinance institutions
 
 Development Partners & NGOs:
 
 Malawi needs most urgent intervention — 81.2% of SMEs are Low health
+
 Lesotho shows a glass ceiling — 39.3% Medium but only 0.3% reach High
+
 Eswatini is a replicable success model for the region
 
 Government & Policy:
 
 Country-level health scores enable targeted subsidy allocation
+
 Model can be retrained annually to track financial inclusion progress
+
 Zimbabwe and Malawi show highest need for credit access programs
 
 
@@ -72,19 +79,29 @@ Zimbabwe and Malawi show highest need for credit access programs
 1. Feature Engineering — 75 Features Created
 
 Financial Ratios - Profit, expense ratio, profit margin, income-to-turnover
+
 Log TransformsLog turnover, log income, log expenses
+
 FHI Dimension 1 — Savings & AssetsSavings proxy, financial inclusion score
+
 FHI Dimension 2 — Debt & RepaymentDebt burden, income stability
+
 FHI Dimension 3 — ResilienceVulnerability flag, resilience risk score
+
 FHI Dimension 4 — Credit AccessCredit diversity, total access score
+
 Interaction Featuresfin × attitude, access × profit, age × fin score
+
 Business AgeTotal months, age group (new/young/mature/established)
 
 2. Preprocessing
 
 OrdinalEncoder for categorical features
+
 MedianImputer for numeric features
+
 Full NaN imputation before SMOTE (most_frequent strategy)
+
 SMOTE oversampling — boosts High class to 50% of Low, Medium to 70% of Low
 
 3. Ensemble Model — 5 Models
@@ -104,13 +121,17 @@ Extra Trees10%Adds diversity
 4. Threshold Tuning
 
 Grid search over High threshold (0.10–0.60) and Medium threshold (0.15–0.60)
+
 Optimized for Macro F1 to treat all 3 classes equally
+
 Best thresholds: High = 0.56, Medium = 0.45
 
 5. Cross Validation
 
 5-Fold Stratified CV with country-aware stratification
+
 Ensures all 4 countries represented in every fold
+
 Stable scores (std dev = 0.0105)
 
 
@@ -121,27 +142,41 @@ The file sme_dashboard_v4.xlsx contains a full interactive dashboard with 3 shee
 🏠 Sheet 1 — Dashboard
 
 KPI cards (Macro F1, features, samples, countries, models)
+
 5-fold CV performance table
+
 Per-class precision, recall, F1 breakdown
+
 Class distribution with imbalance analysis
+
 Country comparison with real data
+
 Top 10 feature importance ranked table
+
 Business impact section
+
 Interpretation of all key decisions
 
 📈 Sheet 2 — Charts
 
 Fold F1 bar chart
+
 Class distribution pie chart
+
 Country financial health stacked bar chart (real data)
+
 Model progression v1 → v4
+
 Feature importance horizontal bar chart
+
 Per-class metrics comparison chart
 
 🌍 Sheet 3 — Country Deep Dive
 
 Full country comparison table
+
 Individual insight cards with policy recommendations per country
+
 Identifies Malawi as highest priority, Eswatini as regional benchmark
 
 
@@ -204,8 +239,24 @@ Provided by: FinMark Trust
 
 🛠️ Tech Stack
 
-ToolPurposePython 3.14Core language  LightGBMPrimary gradient boosting model  XGBoostSecondary gradient boosting model  CatBoostTertiary gradient boosting modelscikit-learnRF, ET, preprocessing, CVimbalanced-learnSMOTE oversamplingpandas + NumPyData manipulation & analysisopenpyxlExcel dashboard creation
+Tool                  Purpose
+Python 3.14          Core language  
+
+LightGBM             Primary gradient boosting model  
+
+XGBoost              Secondary gradient boosting model  
+
+CatBoost             Tertiary gradient boosting model
+
+scikit-learn         RF, ET, preprocessing, CV
+
+imbalanced-learn     SMOTE oversampling
+
+pandas + NumPyData   manipulation & analysis
+
+Microsoft Excel      Excel dashboard creation
 
 👤 Author
+
 Phumlani Mbatha
 
