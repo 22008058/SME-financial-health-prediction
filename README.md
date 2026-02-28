@@ -254,7 +254,7 @@ imbalanced-learn     SMOTE oversampling
 
 pandas + NumPyData   manipulation & analysis
 
-Microsoft Excel      Excel dashboard creation
+openpyxl             Excel dashboard creation
 
 👤 Author
 
