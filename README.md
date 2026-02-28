@@ -17,13 +17,13 @@ Data spans 4 Southern African countries: Eswatini, Lesotho, Zimbabwe, and Malawi
 
 📁 Project Structure
 
-sme-financial-health-prediction/
+SME-financial-health-prediction/
 
-solution.py                  # Full ML pipeline (LightGBM + SMOTE + Ensemble)
+solution_v4.py                  # Full ML pipeline (LightGBM + SMOTE + Ensemble)
 
 explore.py                   # Country-level financial health analysis
 
-sme_dashboard_final.xlsx     # Interactive Excel dashboard (6 sections + 3 sheets)
+sme_dashboard_v4.xlsx     # Interactive Excel dashboard (6 sections + 3 sheets)
 
 submission_v4.csv            # Latest submission file
 
@@ -84,10 +84,16 @@ SMOTE oversampling — boosts High class to 50% of Low, Medium to 70% of Low
 3. Ensemble Model — 5 Models
 
 Model          Weight        Role
+
 LightGBM ✅    35%          Primary learner — fastest & strongest
+
 XGBoost ✅     25%          Diverse boosting patterns
+
 CatBoost ✅    20%          Handles categoricals natively
-Random Forest  10%          Variance reductionExtra Trees10%Adds diversity
+
+Random Forest  10%          Variance reduction
+
+Extra Trees10%Adds diversity
 
 4. Threshold Tuning
 
@@ -104,7 +110,7 @@ Stable scores (std dev = 0.0105)
 
 📊 Excel Dashboard
 
-The file sme_dashboard_final.xlsx contains a full interactive dashboard with 3 sheets:
+The file sme_dashboard_v4.xlsx contains a full interactive dashboard with 3 sheets:
 
 🏠 Sheet 1 — Dashboard
 
