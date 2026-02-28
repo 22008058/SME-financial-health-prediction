@@ -32,12 +32,18 @@ README.md                    # This file
 🌍 Country-Level Insight (from explore.py)
 
 Real data extracted directly from Train.csv using explore.py:
-CountryHigh %Low %Medium %Priority🇸🇿 Eswatini11.5%51.4%37.1%
-✅ Regional success model🇱🇸 Lesotho0.3%60.4%39.3%
-🔴 Glass ceiling effect🇲🇼 Malawi4.0%81.2%14.7%
-🔴 Highest priority — 81% Low🇿🇼 Zimbabwe2.3%68.6%29.1%
-🟡 Moderate — improving
+Country      High %    Low %    Medium %    Priority  
+
+🇸🇿 Eswatini  11.5%    51.4%    37.1%      ✅ Regional success model
+
+🇱🇸 Lesotho    0.3%    60.4%    39.3%      🔴 Glass ceiling effect
+
+🇲🇼 Malawi    4.0%    81.2%    14.7%      🔴 Highest priority — 81% Low 
+
+🇿🇼 Zimbabwe   2.3%    68.6%    29.1%      🟡 Moderate — improving
+
 Key Finding: Eswatini has 11.5% High-health SMEs — nearly 5× the regional average.
+
 Malawi's 81.2% Low rate signals the most urgent need for financial inclusion intervention.
 
 💼 What This Means For Business
