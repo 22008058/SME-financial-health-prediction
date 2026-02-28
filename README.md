@@ -103,7 +103,9 @@ Stable scores (std dev = 0.0105)
 
 
 📊 Excel Dashboard
+
 The file sme_dashboard_final.xlsx contains a full interactive dashboard with 3 sheets:
+
 🏠 Sheet 1 — Dashboard
 
 KPI cards (Macro F1, features, samples, countries, models)
@@ -152,6 +154,7 @@ Run Country Analysis
 bashpython explore.py
 
 Expected Output (solution.py)
+
 ✅ LightGBM found
 ✅ XGBoost found
 ✅ CatBoost found
@@ -161,10 +164,15 @@ Expected Output (solution.py)
 🔑 Key Learnings
 
 Metric matters — optimizing weighted F1 hides minority class weakness; macro F1 forces the model to perform well on the rare High class
+
 SMOTE needs clean data — impute ALL NaNs (including from OrdinalEncoder) before applying SMOTE or it crashes with a ValueError
+
 Threshold tuning gave a significant boost without changing the model at all
+
 Country stratification in CV gave more reliable estimates across different economic contexts
+
 5-model ensemble (LGB + XGB + CatBoost + RF + ET) is more robust than any single model
+
 Real country analysis revealed Malawi (81.2% Low) and Lesotho (0.3% High) need the most urgent intervention — a finding invisible without the explore.py breakdown
 
 
