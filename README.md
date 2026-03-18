@@ -135,51 +135,6 @@ Ensures all 4 countries represented in every fold
 Stable scores (std dev = 0.0105)
 
 
-📊 Excel Dashboard
-
-The file sme_dashboard_v4.xlsx contains a full interactive dashboard with 3 sheets:
-
-🏠 Sheet 1 — Dashboard
-
-KPI cards (Macro F1, features, samples, countries, models)
-
-5-fold CV performance table
-
-Per-class precision, recall, F1 breakdown
-
-Class distribution with imbalance analysis
-
-Country comparison with real data
-
-Top 10 feature importance ranked table
-
-Business impact section
-
-Interpretation of all key decisions
-
-📈 Sheet 2 — Charts
-
-Fold F1 bar chart
-
-Class distribution pie chart
-
-Country financial health stacked bar chart (real data)
-
-Model progression v1 → v4
-
-Feature importance horizontal bar chart
-
-Per-class metrics comparison chart
-
-🌍 Sheet 3 — Country Deep Dive
-
-Full country comparison table
-
-Individual insight cards with policy recommendations per country
-
-Identifies Malawi as highest priority, Eswatini as regional benchmark
-
-
 🚀 How to Run
 
 Install Dependencies
